@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Latihan 2b</title>
+</head>
+<body>
+
+    <table border="3" width="20px" cellspacing="0" cellpadding="10">
+        <tr>
+           <th colspan="20" bgcolor="grey">INPUT DATA MAHASISWA</th>
+        </tr>
+
+        <tr>
+            <td rowspan="1">Username</td>
+            <td rowspan="1">:</td>
+            <td rowspan="1"><input type="text" name="username"/></td>
+        </tr>
+        <tr>
+            <td rowspan="1">Password</td>
+            <td rowspan="1">:</td>
+            <td><input type="PASSWORD"/></td>
+        </tr>
+        <tr>
+            <td>FullName</td>
+            <td>:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td>:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Agama</td>
+            <td>:</td>
+            <td><select>
+            <option NAME="AGAMA" selected>Pilih Agama</option>
+            <option value="ISLAM">ISLAM</option>
+            <option value="KRISTEN">Kristen</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td><input type="radio" name="JenisKel" value="Laki-Laki"/>Laki-Laki <input type="radio" name="Jenis Kel" value="Perempuan"/>Perempuan</td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td><input type="checkbox" name="HOBI" value="Musik">Musik</input>
+            <input type="checkbox" name="HOBI" value="Olahraga">Olahraga</input>
+            <input type="checkbox" name="HOBI" value="Gaming"/>Gaming</input>
+            <input type="checkbox" name="HOBI" value="Lainnya"/>Lainnya</input>
+            </td>
+        </tr>
+        <tr>
+            <td>Profil Singkat</td>
+            <td>:</td>
+            <td><textarea rows="5" cols="35" name="komentar"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="10" align="right"><input type="submit" name="Input" value="Input"/></td>
+        </tr>
+    </table>
+</body>
+</html> 
