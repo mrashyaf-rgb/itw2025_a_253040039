@@ -1,0 +1,69 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.ALL1{}
+
+BODY {
+   background-color: aliceblue;
+}
+
+.Rashya1 {
+    background-color: black;
+    width: 100%;
+}
+
+.Rashya2 {
+    background-color: dimgrey;
+    height: 100px;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.Rashya3 {
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 30;
+}
+
+.Rashya3:hover{
+background-color: black;
+transition: 5s ease-in-out
+transition-delay: .3s;
+border-radius: 8px;
+}
+
+.NAVBAR{
+ color: aliceblue;
+ text-decoration: none;
+}
+
+.IMG1{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-position:0px 200px ;
+}
+
+.IMG2{
+widht:30%;
+height:80%;
+}
+
+.ISI1{
+background-color: aliceblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.isi2{
+font-size: 30px ;
+
+}
