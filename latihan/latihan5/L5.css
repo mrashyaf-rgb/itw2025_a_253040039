@@ -1,69 +1,89 @@
-html {
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.ALL1{}
-
-BODY {
-   background-color: aliceblue;
+body {
+    background: linear-gradient(to bottom, #0B0F2F, #090A1A);
+    color: white;
+    padding-bottom: 50px;
 }
 
-.Rashya1 {
-    background-color: black;
-    width: 100%;
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #3e4cb4;
+    border-bottom: 4px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 30px rgba(5, 20, 225, 0.2);
+    border-radius: 0px 0px 50px 50px;
 }
 
-.Rashya2 {
-    background-color: dimgrey;
-    height: 100px;
-    display:flex;
-    justify-content:center ;
-    align-items: center;
+.title {
+    font-size: 100px;
+    font-weight: 700;
+    color: #baffff;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
 }
 
-.Rashya3 {
-    list-style-type: none;
-    margin: 5px;
-    padding: 10px;
-    color: black;
-    font-size: 30;
+.subtitle {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-.Rashya3:hover{
-background-color: black;
-transition: 5s ease-in-out
-transition-delay: .3s;
-border-radius: 8px;
+.album-section {
+    padding: 40px 50px;
 }
 
-.NAVBAR{
- color: aliceblue;
- text-decoration: none;
+.album-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e70d09;
+    text-shadow: 0 0 8px #ff0000;
+    margin-bottom: 25px;
 }
 
-.IMG1{
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background-position:0px 200px ;
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
 
-.IMG2{
-widht:30%;
-height:80%;
+.album-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    padding: 30px 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: aliceblue;
 }
 
-.ISI1{
-background-color: aliceblue;
-display: flex;
-justify-content: center;
-align-items: center;
+.album-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
 }
 
-.isi2{
-font-size: 30px ;
+.album-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
 
+.album-card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.instagram {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 8px #ffffff;
+    text-align:Center;
 }
