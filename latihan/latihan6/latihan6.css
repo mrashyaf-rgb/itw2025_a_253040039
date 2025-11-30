@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family:"Lobster",sans-serif;
+    overflow-x:hidden ;
+}
+
+/*navbar*/
+nav {
+    display: flex;
+    background-color: rgb(79, 219, 219);
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: rgb(250, 10, 10);
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content:space-evenly;
+}
+
+.nav ul li a {
+    color: rgb(253, 12, 12);
+    text-decoration: none;
+    font-size: 0.5em;
+}
+
+nav ul li a:hover {
+    color: rgb(253, 248, 248);
+}
+
+/* Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.container-satu {
+    width: 800px;
+    margin:50px auto;
+    background-color: #f40404;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 5px solid rgb(0, 200, 255);
+    float:left;
+    margin-right:20px ;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tiga {
+    max-width: 2500px;
+    height: 50px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.thumbnail{
+    width: 50%;
+}
+
+.thumbnail img{
+    width: 100px;
+}
+
+.container-satu {
+    width: 800px;
+    margin:50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-empat {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+
+}
+
+.card {
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 150;
+    background-color: dimgrey;     
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card .besar {
+    transform: scale(1.12);
+}
+
+.container-dua {
+    max-width:800px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu {background-color: rgb(110, 110, 253);
+}
+.layanan.dua {background-color: rgb(181, 248, 81);
+}
+.layanan.tiga {background-color: rgb(250, 75, 75);
+}
+
+/* toggle animations */
+.menu-toggle span:nth-child(2) {
+   transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+   transform-origin: 0 100%;
+}   
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* ukuran tablet */
+@media screen and (max-width:768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width:576px){
+    .menu-toggle {
+       display: flex; 
+    }
+    nav ul {
+       position: absolute;
+       right: 0;
+       top: 0;
+       width: 80%;
+       height: 100vh;
+       align-items: center;
+       justify-content: space-evenly;
+       flex-direction: column;
+       z-index: -1;
+       background-color: aqua;
+       transform: translateX(100%);
+       transition: all 1s;
+       opacity: 0;
+    }
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media(min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+    .layanan {
+        width: 30%;
+    }
+   .thumbnail{
+        width: 25%;
+   }
+}
