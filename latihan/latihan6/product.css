@@ -121,8 +121,7 @@ body {
     margin: auto;
 }
 
-/*responsive*/
-@media(min-width: 600px) {
+/*responsive*/@media(min-width: 600px) {
     .container-dua {
         display: flex;
         justify-content: space-between;

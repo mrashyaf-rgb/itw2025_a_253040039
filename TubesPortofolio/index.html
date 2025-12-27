@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubesPortofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="logo">Mrashya</h2>
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#hobby">Hobby</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <section class="profile-name"id="home">
+        <div class="profile-content fade-up">
+            <h1>
+                Welcome To My Portofolio
+            </h1>
+            <div class="profile-photo">
+                <img src="img/Rashya.jpg" alt="profile">
+            </div>
+
+            <h1>
+                Hi,I'm <span>Mrashya</span>
+            </h1>
+
+            <p>
+                Web Developer - Student
+            </p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="fade-down">About Me</h2>
+        <p class="fade-up">
+            Nama Saya Muhammad Rashya Firmansyah biasa Dipanggil Rashya, Saya Berasal Dari Kota Tasikmalaya Jawabarat,Saya Sedang Belajar Di Universitas Pasundan Prodi Teknik Informatika , Yang Tertarik Pada Pengembangan Web Modern Dengan Animasi Dan Desain Interaktif, Alasan Saya Memilih Prodi Ini Karena Perkembangan Teknologi Yang Semakin Maju.
+        </p>
+    </section>
+
+    <section class="hobby"id="hobby">
+        <h2 class="fade-down">My Hobby</h2>
+
+        <div class="hobby-container">
+            <div class="hobby-photo slide-up">
+                <img src="img/win.jpeg">
+                <h3>boxing</h3>
+        </div>
+            <div class="hobby-photo slide-up">
+                <img src="img/citumang.jpg">
+                <h3>Boddy Rafting</h3>
+        </div>
+            <div class="hobby-photo slide-up">
+                <img src="img/WhatsApp Image 2025-11-17 at 16.56.52_0eea5baa.jpg">
+                <h3>Gunung</h3>
+            </div>     
+        </div>
+    </section>
+
+    <section class="project"id="project">
+        <h2 class="fade-down">My Project</h2>
+
+        <div class="project-container">
+            <div class="project-photo slide up">
+                <img src="img/bgame.jpeg">
+                <div class="project-info">
+                    <h3>Project Tugas Game</h3>
+                    <p>Tugas Besar Pelajaran Berfikir Komputasi , Mmbuat Gamge Dengan Berkelompok</p>  
+                </div>
+            </div>
+           
+             <div class="project-photo slide up">
+                <img src="img/bberita.jpeg">
+                <div class="project-info">
+                    <h3>Tugas Membuat Web</h3>
+                    <p>Membuat Web Kasus Berita</p>  
+                </div>
+            </div>
+
+            <div class="project-photo slide up">
+                <img src="img/bproduct.jpeg">
+                <div class="project-info">
+                    <h3>Membuat Web</h3>
+                    <p>Membuat Tugas Web Product</p>  
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="contact"id="contact">
+        <h2 class="fade-down">Contact Me</h2>
+        <div class="contact-box slide-up">
+            <form name="submit-to-google-sheet">
+            <input type="text" placeholder="Name" name="nama">
+            <input type="email" placeholder="email" name="email">
+            <textarea placeholder="pesan" name="pesan"></textarea>
+                <button type="submit">kirim</button>
+            </form>
+        </div>
+    </section>    
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbymm10be3fFwb2tw_i0_phgBDemxqkdlOL3gmS4UU9yrFbclCcwGMqRSzD_0w75vukWag/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+    <footer>
+        Mrashya
+    </footer>
+</body>
+</html>

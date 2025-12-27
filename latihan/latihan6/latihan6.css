@@ -203,7 +203,7 @@ nav ul li a:hover {
 }
 
 /* ukuran mobile */
-@media screen and (max-width:576px){
+@media screen and (max-width:667px){
     .menu-toggle {
        display: flex; 
     }
