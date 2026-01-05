@@ -177,12 +177,12 @@ section {
 /*hobby*/
 .hobby {
     padding:80px 60px;
-    text-align: center;
+    text-align:justify;
 }
 
 .hobby-container {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -192,7 +192,7 @@ section {
     width: 220px;
     background: rgba(255,255,255,0.1);
     border-radius: 20px;
-    overflow: hidden;
+    overflow:hidden;
     transition: .4s;
     backdrop-filter: blur(15px);
 }
