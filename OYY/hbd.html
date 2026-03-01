@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+<link rel="stylesheet" href="hbd.css">
+</head>
+<body>
+
+<audio id="music" src=""></audio>
+
+<!-- START SCREEN -->
+<div class="screen" id="startScreen">
+  <h1>Special For You 💖</h1>
+  <button onclick="start()">Tap To Start ✨</button>
+</div>
+
+<!-- GAME -->
+<div class="screen hidden" id="gameScreen">
+  <h2>Unlock Your Surprise 🎁</h2>
+  <div class="grid" id="grid"></div>
+</div>
+
+<!-- FINAL -->
+<div class="screen hidden final" id="finalScreen">
+  <h1 id="typing"></h1>
+  <p class="subtitle">MAU MOMOKKKK💕</p>
+  <img src="EPAN.jpeg" id="photo">
+</div>
+
+<div id="effects"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
