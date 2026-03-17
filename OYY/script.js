@@ -58,7 +58,7 @@ function reset(){
 function win(){
   gameScreen.classList.add("hidden");
   finalScreen.classList.remove("hidden");
-  typeText("🎉 HAPPY ANJINGGG 💖");
+  typeText("🎉 bobo nyenyakkk 💖");
   setTimeout(()=>{
     photo.classList.add("show");
     confetti();
